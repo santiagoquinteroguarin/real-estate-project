@@ -6,7 +6,7 @@
     }
 }
 
-.entry-blog {
+.blog-entry {
     margin-bottom: 2rem;
 
     @include tablet {
@@ -26,11 +26,12 @@
     }
 }
 
-.texto-entry {
+.text-entry {
     a {
         color: $black;
         margin-top: 2rem;
         display: block;
+
         @include tablet {
             margin-top: 0;
         }
@@ -49,5 +50,4 @@
             margin-top: 1rem;
         }
     }
-
 }
