@@ -1,12 +1,12 @@
 @include tablet {
-    .seccion-inferior {
+    .section-lower {
         display: grid;
         grid-template-columns: 2fr 1fr;
         column-gap: 2rem;
     }
 }
 
-.entrada-blog {
+.entry-blog {
     margin-bottom: 2rem;
 
     @include tablet {
@@ -14,18 +14,19 @@
         grid-template-columns: 1fr 2fr;
         column-gap: 2rem;
     }
+
     &:last-of-type {
         margin-bottom: 0;
     }
 }
 
-.informacion-meta {
+.information-meta {
     span {
         color: $yellow;
     }
 }
 
-.texto-entrada {
+.texto-entry {
     a {
         color: $black;
         margin-top: 2rem;

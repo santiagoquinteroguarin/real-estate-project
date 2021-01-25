@@ -10,19 +10,20 @@
         @content;
     }
 }
-  
+
 @mixin desktop {
     @media (min-width: #{$desktop}) {
         @content;
     }
 }
+
 @mixin grid($columns, $espaciado ) {
     display: grid;
     gap: $espaciado;
     grid-template-columns: repeat($columns, 1fr);
 }
 
-@mixin boton($bgColor, $display ) {
+@mixin button($bgColor, $display ) {
     background-color: $bgColor;
     color: $white;
     font-weight: $bold;

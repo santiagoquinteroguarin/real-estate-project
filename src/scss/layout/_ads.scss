@@ -1,23 +1,23 @@
 @include tablet {
-    .contenedor-anuncios {
+    .ads-container {
         @include grid(3, 2rem);
     }
 }
 
-.anuncio {
+.ad {
     background-color: lighten($grey, 5);
     border: 1px solid darken($grey, 10);
     margin-bottom: 2rem;
 
-    .contenido-anuncio {
-        padding: 2rem;
-    }
-
     h3, p {
         margin: 0;
     }
- 
 }
+
+.contenido-anuncio {
+    padding: 2rem;
+}
+
 .price {
     color: $green;
     font-weight: $bold;
@@ -38,6 +38,7 @@
             flex:  0 0 3rem;
             margin-right: 1rem;
         }
+
         p {
             font-weight: $black;
         }
