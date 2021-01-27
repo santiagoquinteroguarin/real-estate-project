@@ -10,16 +10,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function darkMode() {
 
+    // ? window.matchMedia --> revisar las preferencias del usuario
     const prefiereDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
 
     // console.log(prefiereDarkMode.matches);
 
     if(prefiereDarkMode.matches) {
+        // agregar dark mode
         document.body.classList.add('dark-mode');
     } else {
+        // eliminar dark mode
         document.body.classList.remove('dark-mode');
     }
 
+    // cambio manual
     prefiereDarkMode.addEventListener('change', function() {
         if(prefiereDarkMode.matches) {
             document.body.classList.add('dark-mode');
