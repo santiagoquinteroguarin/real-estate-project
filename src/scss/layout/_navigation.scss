@@ -37,6 +37,7 @@
 }
 
 .navigation {
+    // * visibility: hidden --> va haver que no se vea
     visibility: hidden;
     opacity: 0;
     height: 0;
@@ -84,6 +85,7 @@
 }
 
 .show {
+    // * visibility: visible --> va hacer que se vea
     visibility: visible;
     opacity: 1;
     height: auto;

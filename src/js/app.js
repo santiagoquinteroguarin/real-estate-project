@@ -1,9 +1,11 @@
-// document.addEventListener('DOMContentLoaded', function() {
+// que el documento este cargado tanto HTML y CSS
+document.addEventListener('DOMContentLoaded', function() {
 
-//     eventListeners();
+    // ? 1.
+    eventListeners();
 
-//     darkMode();
-// });
+    // darkMode();
+});
 
 // function darkMode() {
 
@@ -31,14 +33,15 @@
 //     });
 // }
 
-// function eventListeners() {
-//     const mobileMenu = document.querySelector('.mobile-menu');
+// ? 2.
+function eventListeners() {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    mobileMenu.addEventListener('click', navegationResponsive);
+}
 
-//     mobileMenu.addEventListener('click', navegacionResponsive);
-// }
-
-// function navegacionResponsive() {
-//     const navegacion = document.querySelector('.navegacion');
-
-//     navegacion.classList.toggle('mostrar')
-// }
+// ? 3.
+function navegationResponsive() {
+    const navegacion = document.querySelector('.navigation');
+    // ? toggle --> si la tiene la clase la quita y sino la tiene la agrega
+    navegacion.classList.toggle('show');
+}
