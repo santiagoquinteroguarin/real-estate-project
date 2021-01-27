@@ -4,34 +4,37 @@ document.addEventListener('DOMContentLoaded', function() {
     // ? 1.
     eventListeners();
 
-    // darkMode();
+    // ? 1.
+    darkMode();
 });
 
-// function darkMode() {
+function darkMode() {
 
-//     const prefiereDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+    const prefiereDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
 
-//     // console.log(prefiereDarkMode.matches);
+    // console.log(prefiereDarkMode.matches);
 
-//     if(prefiereDarkMode.matches) {
-//         document.body.classList.add('dark-mode');
-//     } else {
-//         document.body.classList.remove('dark-mode');
-//     }
+    if(prefiereDarkMode.matches) {
+        document.body.classList.add('dark-mode');
+    } else {
+        document.body.classList.remove('dark-mode');
+    }
 
-//     prefiereDarkMode.addEventListener('change', function() {
-//         if(prefiereDarkMode.matches) {
-//             document.body.classList.add('dark-mode');
-//         } else {
-//             document.body.classList.remove('dark-mode');
-//         }
-//     });
+    prefiereDarkMode.addEventListener('change', function() {
+        if(prefiereDarkMode.matches) {
+            document.body.classList.add('dark-mode');
+        } else {
+            document.body.classList.remove('dark-mode');
+        }
+    });
 
-//     const botonDarkMode = document.querySelector('.dark-mode-boton');
-//     botonDarkMode.addEventListener('click', function() {
-//         document.body.classList.toggle('dark-mode');
-//     });
-// }
+    // ? 2.
+    const botonDarkMode = document.querySelector('.dark-mode-button');
+    botonDarkMode.addEventListener('click', function() {
+        // ? agregar al body toggle --> si la tiene la clase la quita y sino la tiene la agrega
+        document.body.classList.toggle('dark-mode');
+    });
+}
 
 // ? 2.
 function eventListeners() {
